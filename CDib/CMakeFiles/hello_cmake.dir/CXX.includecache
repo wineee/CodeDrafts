@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rew/CodeDrafts/CDib/CDib.cpp
+cstdio
+-
+CDib.h
+/home/rew/CodeDrafts/CDib/CDib.h
+
+/home/rew/CodeDrafts/CDib/CDib.h
+
