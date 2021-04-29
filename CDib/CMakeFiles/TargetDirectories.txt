@@ -1,3 +1,0 @@
-/home/rew/CodeDrafts/CDib/CMakeFiles/rebuild_cache.dir
-/home/rew/CodeDrafts/CDib/CMakeFiles/edit_cache.dir
-/home/rew/CodeDrafts/CDib/CMakeFiles/hello_cmake.dir

@@ -1,3 +1,9 @@
+#ifndef CDIB_H
+#define CDIB_H
+
+#pragma pack(1)
+//设置结构体的边界对齐为1个字节，也就是所有数据在内存中是连续存储的。
+
 typedef unsigned short WORD;
 typedef unsigned long DWORD;
 typedef long LONG;
@@ -22,9 +28,9 @@ typedef struct tagBITMAPINFOHEADER {
   DWORD biCompression; // 压缩类型 0-不压缩 1-BI_RLE8, 2-BI_RLE4
   DWORD biSizeImage; // 位图大小，字节
   LONG biXPelsPerMeter; // 水平分辨率，每米像素数
-  LONG bitYPelsPerMeter; // 垂直分辨率
-  DWORD biClrUsed; // 位图实际使用颜色表中的颜色数
-  DWORD biClrImportant; // 位图的重要颜色数
+  LONG biYPelsPerMeter; // 垂直分辨率
+  DWORD biClrUsed; // 位图实际使用的颜色表中的颜色数
+  DWORD biClrImportant; // 位图的显示过程中重要颜色数
 } BITMAPINFOHEADER;
 
 // 位图颜色表项
@@ -53,3 +59,5 @@ class CDib {
   BYTE *m_pData; // 像素阵列
   BYTE *pDib;
 };
+
+#endif
